@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+<neo-three [height]="1000" [width]="1000">
+  <neo-camera [fov]="100" [aspect]="1" [near]="10" [far]="1000" [x]="0" [y]="-15" [z]="0"></neo-camera>
+  <neo-light [x]="0" [y]="200" [z]="0" [color]="16777215"  [intensity]="1" [distance]="0"></neo-light>
+  <neo-light [x]="100" [y]="200" [z]="100" [color]="16777215"  [intensity]="1" [distance]="0"></neo-light>
+  <neo-light [x]="-100" [y]="-200" [z]="-100" [color]="16777215"  [intensity]="1" [distance]="0"></neo-light>
+  <neo-grid [size]="11" [divisions]="22" [color]="2503224"></neo-grid>
+  <neo-arrow [color]="16777215" [origin]="[-11, 0, 0]" [direction]="[1, 0, 0]" [length]="22"></neo-arrow>
+  <neo-arrow [color]="16777215" [origin]="[0, 0, -11]" [direction]="[0, 0, 1]" [length]="22"></neo-arrow>
+  <!--<neo-add-wireframe>
+    <neo-cube [height]="10" [width]="10" [depth]="10" >
+      <neo-mesh [x]="0" [y]="0" [z]="0" [color]="2503224" [emissive]="3622735"></neo-mesh>
+    </neo-cube>
+  </neo-add-wireframe>-->
+  <!--<neo-add-wireframe>
+    <neo-sphere [radius]="10" [widthSegments]="36" [heightSegments]="36" >
+      <neo-mesh [x]="0" [y]="0" [z]="0" [color]="2503224" [emissive]="3622735"></neo-mesh>
+    </neo-sphere>
+  </neo-add-wireframe>-->
+</neo-three>
